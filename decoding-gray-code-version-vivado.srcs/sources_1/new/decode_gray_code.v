@@ -29,12 +29,12 @@ module decode_gray_code(
     assign bin[3]= gray[3];
     
     //bit b
-    assign bin[2]= gray[3]^ gray[2];
+    assign bin[2]= gray[3] ^ gray[2];
     
     //bit c
-    assign bin[1]= gray[3]^ gray[2]^ gray[1];
+    assign bin[1]= gray[3] ^ gray[2] ^ gray[1];
     
     //bit d
-    assign bin[0]= gray[3]^ gray[2]^ gray[1]^ gray[0];
+    assign bin[0]= gray[3] ^ gray[2] ^ gray[1] ^ gray[0];
     
 endmodule
