@@ -21,22 +21,56 @@
 
 
 module display_seven_segments(
-        input[3:0] bin,//binary input
-        output[7:0] segments //gray code output
+        input[3:0] bin,// binary input
+        output[6:0] segments // gray code output
         );
-    assign segments[7] = (bin[3] & ~bin[2]& ~bin[1]) |
-                        (~bin[3] & bin[2] & bin[0]) |
-                        (bin[3] & ~bin[0]) |
-                        (~bin[3] & bin[1]) |
-                        (bin[2] & bin[1]) |
-                        (~bin[2] & ~bin[0]);
+    
+    // segment a
+    assign segments[6] =    (bin[3] & ~bin[2] & ~bin[1]) |
+                            ( ~bin[3] & bin[2] & bin[0]) | 
+                            ( ~bin[2] & ~bin[0]) | 
+                            ( ~bin[3] & bin[1]) | 
+                            ( bin[3] & ~bin[0]) | 
+                            ( bin[2] &  bin[1] );
+                             
+    // segment b
+    assign segments[5] =    (~bin[3] & ~bin[1] & ~bin[0]) | 
+                            ( ~bin[3] & bin[1] & bin[0]) | 
+                            ( bin[3] & ~bin[1] &  bin[0]) | 
+                            ( ~bin[2] &  ~bin[0]) | 
+                            ( ~bin[3] &  ~bin[2] );
+    // segment c
+    assign segments[4] =    (~bin[1] & bin[0]) | 
+                            ( ~bin[3] & bin[2]) | 
+                            ( bin[3] & ~bin[2]) | 
+                            ( ~bin[3] & bin[0]) | 
+                            ( ~bin[3] & ~bin[1] );
+    
+    // segment d
+    assign segments[3] =    (bin[2] & ~bin[1] & bin[0]) | 
+                            ( bin[3] & ~bin[1]) | 
+                            ( bin[2] & bin[1] & ~bin[0]) | 
+                            ( ~bin[2] & bin[1] & bin[0]) | 
+                            ( ~bin[3] & ~bin[2] & ~bin[0] );
+    
+    // segment e
+    assign segments[2] =    (~bin[2] & ~bin[0]) | 
+                            ( bin[1] & ~bin[0]) | 
+                            ( bin[3] & bin[1]) | 
+                            ( bin[3] & bin[2] );
+    
+    // segmenet f
+    assign segments[1] =    (~bin[3] & bin[2] & ~bin[1]) | 
+                            ( ~bin[1] & ~bin[0]) | 
+                            ( bin[2] & ~bin[0]) | 
+                            ( bin[3] & ~bin[2]) | 
+                            ( bin[3] & bin[1] );
+    
+    // segment g
+    assign segments[0] =    (~bin[2] & bin[1]) | 
+                            ( bin[3] & ~bin[2]) | 
+                            ( bin[3] & bin[0]) | 
+                            ( bin[1] & ~bin[0]) | 
+                            ( ~bin[3] & bin[2] & ~bin[1] );
 
-
-    assign segments[6]= 0;
-    assign segments[5]= 1;
-    assign segments[4]= 0;    
-    assign segments[3]= bin[3];
-    assign segments[2]= bin[3]^ bin[2];
-    assign segments[1]= 1;
-    assign segments[0]= 0;                 
 endmodule

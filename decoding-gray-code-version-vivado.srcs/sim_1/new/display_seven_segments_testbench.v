@@ -23,7 +23,7 @@
 module display_seven_segments_testbench();
  
     reg[3:0] bin;
-    wire[7:0] segments;
+    wire[6:0] segments;
 
    display_seven_segments uut1(bin,segments);
    
@@ -45,7 +45,6 @@ module display_seven_segments_testbench();
         bin <= 13;#10;
         bin <= 14;#10;
         bin <= 15;#10;
-        #100;
     $stop;
     end;
 endmodule
