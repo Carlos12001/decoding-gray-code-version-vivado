@@ -24,8 +24,11 @@ module display_seven_segments_testbench();
  
     reg[3:0] bin;
     wire[6:0] segments;
-
-   display_seven_segments uut1(bin,segments);
+    wire[3:0] decode_gray;
+    
+    
+   display_seven_segments uut1(bin, segments);
+   decode_gray_code uut2(bin, decode_gray);   
    
     always
         begin
