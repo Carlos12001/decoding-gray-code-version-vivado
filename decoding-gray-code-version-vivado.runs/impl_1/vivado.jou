@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Oct  7 15:57:57 2022
+# Process ID: 19276
+# Current directory: C:/Users/ikari/OneDrive/Escritorio/Proyecto 2 DisLog/decoding-gray-code-version-vivado/decoding-gray-code-version-vivado.runs/impl_1
+# Command line: vivado.exe -log display_seven_segments.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source display_seven_segments.tcl -notrace
+# Log file: C:/Users/ikari/OneDrive/Escritorio/Proyecto 2 DisLog/decoding-gray-code-version-vivado/decoding-gray-code-version-vivado.runs/impl_1/display_seven_segments.vdi
+# Journal file: C:/Users/ikari/OneDrive/Escritorio/Proyecto 2 DisLog/decoding-gray-code-version-vivado/decoding-gray-code-version-vivado.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source display_seven_segments.tcl -notrace
