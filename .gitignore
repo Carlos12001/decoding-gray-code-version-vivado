@@ -8,6 +8,12 @@
 *
 !*/
 !.gitignore
+!decoding-gray-code-version-vivado.srcs/*
+!decoding-gray-code-version-vivado.xpr/*
+
+#Exclude
+./.fleet/*
+
 ###########################################################################
 ##	VIVADO
 ###########################################################################
