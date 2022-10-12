@@ -9,7 +9,9 @@
 !*/
 !.gitignore
 !decoding-gray-code-version-vivado.srcs/*
-!decoding-gray-code-version-vivado.xpr/*
+!decoding-gray-code-version-vivado.xpr
+decoding-gray-code-version-*/
+decoding-gray-code-version-vivado.cache
 
 #Exclude
 ./.fleet/*
