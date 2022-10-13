@@ -1,4 +1,4 @@
-# Bienvenido a Decoding Gray-code Version Vivado
+# Bienvenido a Gray Code Decoder
 
 This project contain the source code in Vivado of a decode the Gray coding. 
 This project will be implement in a FPGA, 
