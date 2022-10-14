@@ -31,3 +31,12 @@ El Flip Flop se usa para registrar los bits que entran al sistema que luego sera
 
 !(Flip Flop)[https://scontent.fsyq1-1.fna.fbcdn.net/v/t39.30808-6/311691946_5682696385107618_6835330008073463939_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=ZxNJcIY5BBQAX-ITaRS&_nc_ht=scontent.fsyq1-1.fna&oh=00_AT-xYD40v2VO_H5HnFPZV_yxHwneSu3m2x3t1V_eHPAQ-g&oe=634E7AEE]
 
+## Ejemplos Y Resultados
+
+Al prender el FPGA y conectarlo se espera para que cargue el codigo, al cargar el display esta en 0. Se usan solo los ultimos 4 swicthes, al activar el segundo switch en el display se forma un 3 por la codificación.
+
+Potencia consumida por la herramienta de vivado: 7,945W
+ 
+ ##Problemas de desarrollo y sus soluciones
+ 
+El principal problema fue que no se sabia como utilizar el display para que apareciara solo dos numeros, por lo que se decidio usar el hexadecimal. Cuando se decidio utilizar el hexadecimal el display no daba las letras de manera correcta de manera correcta por lo que se decidio volver a análizar el display.
