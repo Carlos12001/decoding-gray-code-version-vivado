@@ -40,3 +40,9 @@ Potencia consumida por la herramienta de vivado: 7,945W
  ##Problemas de desarrollo y sus soluciones
  
 El principal problema fue que no se sabia como utilizar el display para que apareciara solo dos numeros, por lo que se decidio usar el hexadecimal. Cuando se decidio utilizar el hexadecimal el display no daba las letras de manera correcta de manera correcta por lo que se decidio volver a análizar el display.
+
+
+
+## Referencias
+
+https://fpgacoding.com/seven-segment-display-an-initial-exploration/
